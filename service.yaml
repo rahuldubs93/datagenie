@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: datagenie-service
+spec:
+  selector:
+    app: datagenie
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: NodePort

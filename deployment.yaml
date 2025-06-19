@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: datagenie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: datagenie
+  template:
+    metadata:
+      labels:
+        app: datagenie
+    spec:
+      containers:
+      - name: datagenie
+        image: <image_name>
+        #imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+

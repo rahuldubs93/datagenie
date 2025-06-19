@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "zdt-datagenie"
+version = "0.1.0"
+description = ""
+authors = [""]
+readme = "README.md"
+packages = [{include = "zdt_datagenie", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.12"
+pydantic = "^2.6.4"
+uvicorn = "^0.23.2"
+uvloop = "^0.17.0"
+jinja2 = "^3.1.3"
+snowflake-sqlalchemy = "^1.7.3"
+python-dotenv = "^1.0.1"
+pandas = "^2.2.1"
+httpx = "^0.25.2"
+casbin = "^1.36.0"
+watchfiles = "^0.20.0"
+websockets = "^11.0.3"
+
+[tool.poetry.scripts]
+start = "zdt_datagenie.main:app"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.source]
+name = "zoom_artifactory"
+url = "https://artifacts.corp.zoom.us/artifactory/api/pypi/zoom-pypi-virtual/simple"
+priority = "primary"

@@ -1,0 +1,21 @@
+[flake8]
+per-file-ignores =
+    ./**/__init__.py: F401
+ignore =
+    # module level import not at top of file
+    E402
+    # line too long
+    E501
+    # do not assign a lambda expression, use a def
+    E731
+    # unable to detect undefined names
+    F403
+    F405
+    # line break before binary operator
+    W503
+    F407
+exclude =
+    venv
+    ci
+    tests
+    .git
