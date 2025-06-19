@@ -1,6 +1,0 @@
-profile           = "app-data-science-prod"
-dynamodb_table    = "zoom-tfstate-prod-491600578599"
-bucket            = "zoom-tfstate-prod-491600578599"
-key               = "data-team-app-prod/zoom-data-team/data-platform-architecture/services/datagenie/go/state.tfstate"
-region            = "us-west-2"
-role_arn          = "arn:aws:iam::778944005138:role/zoom-tfstate-prod-491600578599-data-team-app-prod"
